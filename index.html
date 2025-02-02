@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Fat & BMI Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Body Fat and BMI Predictor</h1>
+    <div class="container">
+        <div class="image-section">
+            <img src="photo3.png" alt="Illustrative Image" class="side-image">
+        </div>
+        <form id="prediction-form">
+            <div class="form-group">
+                <div>
+                    <label for="Weight">Weight (kg):</label>
+                    <input type="number" id="Weight" name="Weight" step="0.01" required>
+                </div>
+                <div>
+                    <label for="Height">Height (m):</label>
+                    <input type="number" id="Height" name="Height" step="0.01" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="Neck">Neck (cm):</label>
+                    <input type="number" id="Neck" name="Neck" step="0.01" required>
+                </div>
+                <div>
+                    <label for="Chest">Chest (cm):</label>
+                    <input type="number" id="Chest" name="Chest" step="0.01" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="Abdomen">Abdomen (cm):</label>
+                    <input type="number" id="Abdomen" name="Abdomen" step="0.01" required>
+                </div>
+                <div>
+                    <label for="Hip">Hip (cm):</label>
+                    <input type="number" id="Hip" name="Hip" step="0.01" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="Knee">Knee (cm):</label>
+                    <input type="number" id="Knee" name="Knee" step="0.01" required>
+                </div>
+                <div>
+                    <label for="Wrist">Wrist (cm):</label>
+                    <input type="number" id="Wrist" name="Wrist" step="0.01" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="Sex">Sex:</label>
+                    <select id="Sex" name="Sex" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Age">Age (years):</label>
+                    <input type="number" id="Age" name="Age" required>
+                </div>
+            </div>
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+    
+    <div id="results">
+    <h2>Prediction Results</h2>
+    <div class="results-container">
+        <div class="result-card">
+            <div class="result-item">
+                <h3>Your BMI</h3>
+                <p id="bmi-result" class="result-value">0</p>
+            </div>
+            <div class="result-item">
+                <h3>BMI Classification</h3>
+                <p id="bmi-class-result" class="result-value">...</p>
+            </div>
+            <div class="result-item">
+                <h3>Body Fat Percentage</h3>
+                <p id="bodyfat-result" class="result-value">0</p>
+            </div>
+            <div class="result-item">
+                <h3>Body Fat Classification</h3>
+                <p id="bodyfat-class-result" class="result-value">...</p>
+            </div>
+        </div>
+        <div class="explanation-card">
+            <h3>BMI Classification:</h3>
+            <div class="classification">
+                <p><span class="label">Underweight:</span> BMI < 18.5</p>
+                <p><span class="label">Normal weight:</span> BMI 18.5–24.9</p>
+                <p><span class="label">Overweight:</span> BMI 25–29.9</p>
+                <p><span class="label">Obese:</span> BMI ≥ 30</p>
+            </div>
+            <h3>Body Fat Classification:</h3>
+            <div class="classification">
+                <p><span class="label">Essential Fat:</span> 2–5% (Male), 10–13% (Female)</p>
+                <p><span class="label">Athletes:</span> 6–13% (Male), 14–20% (Female)</p>
+                <p><span class="label">Fitness:</span> 14–17% (Male), 21–24% (Female)</p>
+                <p><span class="label">Average:</span> 18–24% (Male), 25–31% (Female)</p>
+                <p><span class="label">Obese:</span> 25%+ (Male), 32%+ (Female)</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <script src="scripts.js"></script>
+</body>
+</html>
