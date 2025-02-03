@@ -28,16 +28,6 @@ The **Body Fat Predictor** is a machine learning model built using the **Random 
 2. Click the **Predict** button  
 3. View **BMI and Body Fat Percentage results** along with their classifications  
 
-## **BMI Calculation**  
-The **Body Mass Index (BMI)** is calculated using the formula:  
-
-\[ BMI = \frac{Weight (kg)}{Height (m)^2} \]  
-
-### **BMI Categories**  
-- **Underweight**: BMI < 18.5  
-- **Normal weight**: 18.5 ≤ BMI < 24.9  
-- **Overweight**: 25 ≤ BMI < 29.9  
-- **Obese**: BMI ≥ 30  
 
 ## **Demo Video**  
 ![Watch the Video](video.gif)
@@ -64,7 +54,7 @@ The **Body Mass Index (BMI)** is calculated using the formula:
 - **NumPy & Pandas** (for data processing)
 
 ## **Team**  
-<img src="logo.png" width="40%"/>
+<img src="logo.png" width="50%"/>
 
 ## **License**  
 📜 MIT License   
